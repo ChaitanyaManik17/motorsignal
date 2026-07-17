@@ -24,6 +24,10 @@ After three high-quality sessions, MotorSignal establishes a personal baseline. 
 - MongoDB Atlas Free provides durable demo sessions; memory storage makes local judging frictionless.
 - Two Vercel projects deploy the frontend and FastAPI API with no paid host required.
 
+## How Codex and GPT-5.6 helped
+
+I used Codex with GPT-5.6 as the implementation partner for this project: translating the product specification into the working frontend and API, shaping the landmark-only data model and trend-validation rules, writing tests and seed data, and preparing the Vercel/MongoDB Atlas deployment configuration. I used the resulting code and checks as a starting point, then reviewed the safety language, product claims, and submission materials to ensure they describe the implemented demo accurately.
+
 ## The difficult parts
 
 The central technical risk was making webcam tracking useful without making video collection part of the product. The landmark-only boundary keeps raw frames on-device, but demanded a more robust measurement choice: MediaPipe world landmarks reduce apparent movement caused by shifting toward the camera. The other hard problem was avoiding “one noisy session equals an alert.” The two-pass trend validator checks data quality, duration, stable baseline variation, and repeated same-direction change before a dashboard alert is confirmed.
