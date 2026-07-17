@@ -21,8 +21,8 @@ After three high-quality sessions, MotorSignal establishes a personal baseline. 
 - Finger tapping measures world-landmark distance from thumb tip (4) to index tip (8).
 - Hand rotation uses the periodic on-screen palm-width proxy between index MCP (5) and pinky MCP (17).
 - FastAPI + SciPy detects peaks/troughs and derives biomarker values.
-- MongoDB Atlas is supported for durable sessions; memory storage makes local judging frictionless.
-- Vercel and Render configuration are included.
+- MongoDB Atlas Free provides durable demo sessions; memory storage makes local judging frictionless.
+- Two Vercel projects deploy the frontend and FastAPI API with no paid host required.
 
 ## The difficult parts
 
@@ -49,8 +49,8 @@ We would validate task instructions and signal thresholds with clinicians, add t
 
 ## Submission checklist
 
-- [ ] Deploy the API from `render.yaml`; set `MONGO_URI` and `CORS_ORIGINS`.
-- [ ] Deploy `frontend/` to Vercel; set `VITE_API_URL` to the API URL.
+- [ ] Deploy `backend/` as a Vercel project; set `MONGO_URI`, `MONGO_DB`, and `CORS_ORIGINS`.
+- [ ] Deploy `frontend/` as a second Vercel project; set `VITE_API_URL` to the API URL.
 - [ ] Verify a live webcam session on the deployment (HTTPS is required for camera access).
 - [ ] Load synthetic history for the video demo and keep its visible label in frame.
 - [ ] Add the deployed URL, demo video URL, repository URL, and this description to Devpost.
