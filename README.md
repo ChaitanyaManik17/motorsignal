@@ -65,3 +65,7 @@ The Hobby plan is for personal/non-commercial use, ideal for a hackathon demo. A
 ## Privacy story
 
 MediaPipe runs fully in the client. Raw frames are drawn only to the on-page canvas and never uploaded. The backend accepts a compact sequence of MediaPipe **world-landmark coordinates** to calculate metrics, plus the local-browser profile ID and resulting session metadata.
+
+## Built with Codex and GPT-5.6
+
+MotorSignal was planned, implemented, tested, and prepared for deployment in a Codex session powered by GPT-5.6. Codex helped turn the initial product brief into the React/Vite interface, FastAPI data model and signal-processing pipeline, synthetic trend data, unit tests, deployment configuration, and the submission documentation. The final implementation decisions were reviewed against the project goal: preserve browser-only video handling, make demo data unmistakably synthetic, and avoid diagnostic claims.
