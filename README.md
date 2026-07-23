@@ -35,21 +35,6 @@ npm run dev
 
 Open the printed Vite URL, allow camera access, then choose a task. Set `VITE_API_URL` for a deployed API; it defaults to `http://localhost:8000`.
 
-## Free deployment: Vercel + MongoDB Atlas
-
-Seed a clearly synthetic, three-week history with:
-
-```bash
-cd backend
-python3 scripts/seed_demo_data.py --profile-id demo-profile
-```
-
-When running with in-memory storage locally, use the **Load demo history** button in the dashboard instead; it loads the same data into the running API process.
-
-Deploy both services using Vercel's free Hobby plan; this project includes the FastAPI Vercel entry point at `backend/app/app.py`. Use MongoDB Atlas's Free cluster for persistent demo data. The API provides `/docs` for an interactive schema reference.
-
-`frontend/vercel.json`, `backend/vercel.json`, and both `.env.example` files are included. Use the exact narration, Devpost copy, and recording checklist in [SUBMISSION.md](./SUBMISSION.md).
-
 
 
 ## Privacy story
