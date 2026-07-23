@@ -50,17 +50,7 @@ Deploy both services using Vercel's free Hobby plan; this project includes the F
 
 `frontend/vercel.json`, `backend/vercel.json`, and both `.env.example` files are included. Use the exact narration, Devpost copy, and recording checklist in [SUBMISSION.md](./SUBMISSION.md).
 
-### Submission-grade production checklist
 
-1. In MongoDB Atlas, create a **Free** cluster and database user. In Network Access, allow `0.0.0.0/0` so Vercel's dynamic serverless IPs can connect; use a long, unique database password.
-2. In Vercel, import this GitHub repository a first time. Set **Root Directory** to `backend` and name it `motorsignal-api`.
-3. Add backend Production and Preview environment variables: `MONGO_URI`, `MONGO_DB=motor_signal`, and `CORS_ORIGINS=http://localhost:5173` for now. Deploy and copy its URL, e.g. `https://motorsignal-api.vercel.app`.
-4. In Vercel, import the same repository a second time. Set **Root Directory** to `frontend` and name it `motorsignal`.
-5. Set `VITE_API_URL` to the backend URL in Production and Preview, then deploy the frontend.
-6. Return to the backend project and update `CORS_ORIGINS` to `https://your-frontend.vercel.app,http://localhost:5173`, then redeploy it.
-7. Open the frontend URL over HTTPS and complete a task—the browser requires HTTPS for webcam access outside localhost. Use **Load demo history** immediately before recording. The visible synthetic-data notice must remain part of the demo.
-
-The Hobby plan is for personal/non-commercial use, ideal for a hackathon demo. Atlas Free clusters are automatically paused after 30 days without activity, so open the app before your final presentation if it has been dormant.
 
 ## Privacy story
 
